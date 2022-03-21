@@ -32,8 +32,8 @@ curl "https://myupway.com/System/$SYSTEMID/Manage/4.9.3" \
   --connect-timeout 2 --max-time 2 -sL -k -o /dev/null -w "%{http_code}" \
   --compressed
 
-if [ "$http_response" != "200" ]; then
-    echo "Unable to set value for komfort drift"
+if [ "$http_response" != "302" ]; then
+    echo "Unable to set value for gradminutter"
     exit 1
 fi
 
