@@ -35,7 +35,7 @@ You need to enable the script and be visible inside Home Assistant. To do so, ed
 
 ```yaml
 shell_command:
-  metroterm_komfort_okonomi: /config/metrotherm.sh 0
-  metroterm_komfort_normal: /config/metrotherm.sh 1
-  metroterm_komfort_luksus: /config/metrotherm.sh 2
+  metroterm_komfort_okonomi: "bash /config/metrotherm.sh 0"
+  metroterm_komfort_normal: "bash /config/metrotherm.sh 1"
+  metroterm_komfort_luksus: "bash /config/metrotherm.sh 2"
 ```
